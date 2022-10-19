@@ -70,16 +70,17 @@ img {
     margin-right: 94px;
 }
 
-.logo {
+.header-logo {
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: var(--accent-color);
     text-decoration: none;
+    padding: 24px 0;
 }
 
-.header-logo {
+.header-logo-color {
     color: #000000;
 }
 
@@ -217,12 +218,12 @@ img {
 }
 
 .benefits-item {
-    width: 270px;
+    width: calc(100%/4 - 30px/4*3);
     margin-bottom: 20px;
 }
 
 .benefits-icon-bg {
-    width: 270px;
+    width: 100%;
     height: 120px;
     background-color: var(--team-bg);
     display: flex;
@@ -249,6 +250,10 @@ img {
     justify-content: space-between;
 }
 
+.we-do-items {
+    width: calc(100%/3 - 30px/3*2);
+}
+
 .name {
     font-weight: 500;
     font-size: 16px;
@@ -271,6 +276,12 @@ img {
 
 .team-card {
     text-align: center;
+    display: block;
+    background-color: var(--card-bg);
+    width: calc(100%/4 - 30px/4*3);
+    box-shadow: var(--card-shadow);
+    border-radius: 0px 0px 4px 4px;
+        
 }
 
 .name-container {
@@ -298,12 +309,17 @@ img {
     justify-content: space-between;
 }
 
+.partners-item {
+    width: calc(100%/6 - 30px/6*5);
+    height: 92px;
+}
+
 .partners-links {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
-    height: 92px;
+    width: 100%;
+    height: 100%;
     border: 1px solid var(--links-color);
     border-radius: 4px;
     color: var(--links-color);
@@ -330,7 +346,16 @@ img {
     padding: 60px 0;
 }
 
-.footer-logo{
+.footer-logo {
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.footer-logo-color{
     color: var(--main-white);
     text-decoration: none;
     margin-bottom: 20px;
@@ -441,14 +466,6 @@ img {
     cursor: pointer;
 }
 
-.team-card {
-    display:block;
-    background-color: var(--card-bg);
-    width: 270px;
-    box-shadow: var(--card-shadow);
-    border-radius: 0px 0px 4px 4px;
-}
-
 .portfolio-links {
     text-decoration: none;
     color: inherit;
@@ -467,7 +484,7 @@ img {
 
 .portfolio-card {
     background-color: var(--card-bg);
-    width: 370px;
+    width: calc(100%/3 - 30px/3*2);
 }
 
 .descr-container {
